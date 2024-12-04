@@ -20,6 +20,6 @@ fn main() -> anyhow::Result<()> {
 
     let safe_reports_b = day2::part_b("inputs/day2.txt")?;
     println!("day2 part B: safe reports with dampener: {safe_reports_b}");
-
+  
     Ok(())
 }
