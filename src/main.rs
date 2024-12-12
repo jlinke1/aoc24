@@ -1,5 +1,6 @@
 use crate::aoc::day1;
 use crate::aoc::day2;
+use crate::aoc::day3;
 use crate::aoc::helpers;
 use anyhow::{self, Ok};
 pub mod aoc;
@@ -20,6 +21,11 @@ fn main() -> anyhow::Result<()> {
 
     let safe_reports_b = day2::part_b("inputs/day2.txt")?;
     println!("day2 part B: safe reports with dampener: {safe_reports_b}");
-  
+
+    let multiplication_result = day3::part_a("inputs/day3.txt")?;
+    println!("day3 part A: result: {multiplication_result}");
+
+    let enabled_multiplications_result = day3::part_b("inputs/day3.txt")?;
+    println!("day3 part B: result: {enabled_multiplications_result}");
     Ok(())
 }
